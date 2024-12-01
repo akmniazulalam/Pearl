@@ -34,7 +34,7 @@ import Fax from './assets/FAX.png'
 import ProjectOne from '../public/assets 2/Fotolia_46046458_Subscription_Monthly_M.jpg'
 import ProjectTwo from '../public/assets 2/Fotolia_49123103_Subscription_Monthly_XL.jpg'
 import ProjectThree from '../public/assets 2/Fotolia_50072102_Subscription_Monthly_M.jpg'
-import ProjectFour from '../public/assets 2/../public/assets 2/Fotolia_54040023_Subscription_Monthly_M-1.jpg'
+import ProjectFour from '../public/assets 2/Fotolia_54040023_Subscription_Monthly_M-1.jpg'
 import ProjectFive from '../public/assets 2/Fotolia_55534392_Subscription_Monthly_M.jpg'
 import ProjectSix from '../public/assets 2/Fotolia_69419317_Subscription_Monthly_L.jpg'
 
