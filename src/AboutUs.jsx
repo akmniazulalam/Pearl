@@ -35,7 +35,9 @@ import Flex from './components/Flex'
 import Menu from './components/Menu'
 import Email from './assets/Email.png'
 import Fax from './assets/FAX.png'
-
+import LogoCarousel from "./components/LogoCarousel";
+import Image from "./components/Image";
+import Mission from '../public/assets 2/mission.png'
 
 const AboutUs = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -162,7 +164,7 @@ const AboutUs = () => {
             <div className="border-t-[6px] max-w-[50px] border-borderColor">
               <h2 id="heading" className="text-dropdownColor font-oxygen mt-3 w-[400px] font-bold text-[36px]">Our mission</h2>
             </div>
-            <img src="../public/assets 2/mission.png" alt="" className="mt-5"/>
+            <Image src={Mission} alt={Mission} className="mt-5"/>
             <div className="list">
               <ul>
                 <li>
@@ -212,9 +214,9 @@ const AboutUs = () => {
           </div>
           <div className="partners paddingBottom mt-9">
             <div className="border-t-[6px] max-w-[50px] border-borderColor">
-            <h2 id="heading" className="text-dropdownColor font-oxygen mt-3 w-[400px] font-bold text-[36px]">Our partners</h2>
+              <h2 id="heading" className="text-dropdownColor font-oxygen mt-3 w-[400px] font-bold text-[36px]">Our partners</h2>
             </div>
-            <div className="partnersImg">
+            {/* <div className="partnersImg">
               <Slider {...settings} className="sliderBox">
                 {logos.map((logo, index) => (
                   <div key={index}>
@@ -222,12 +224,15 @@ const AboutUs = () => {
                   </div>
                 ))}
               </Slider>
+            </div> */}
+            <div className="logoItems mt-9">
+              <LogoCarousel />
             </div>
           </div>
 
           <div className="faq paddingBottom mt-9">
             <div className="border-t-[6px] max-w-[50px] border-borderColor">
-            <h2 id="heading" className="text-dropdownColor font-oxygen mt-3 w-[600px] font-bold text-[32px]">Frequently asked questions</h2>
+              <h2 id="heading" className="text-dropdownColor font-oxygen mt-3 w-[600px] font-bold text-[32px]">Frequently asked questions</h2>
             </div>
             <div className="faqBox">
               {faqData.map((item, index) => (
