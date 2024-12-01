@@ -31,7 +31,12 @@ import Flex from './components/Flex'
 import Menu from './components/Menu'
 import Email from './assets/Email.png'
 import Fax from './assets/FAX.png'
-
+import ProjectOne from '../public/assets 2/Fotolia_46046458_Subscription_Monthly_M.jpg'
+import ProjectTwo from '../public/assets 2/Fotolia_49123103_Subscription_Monthly_XL.jpg'
+import ProjectThree from '../public/assets 2/Fotolia_50072102_Subscription_Monthly_M.jpg'
+import ProjectFour from '../public/assets 2/../public/assets 2/Fotolia_54040023_Subscription_Monthly_M-1.jpg'
+import ProjectFive from '../public/assets 2/Fotolia_55534392_Subscription_Monthly_M.jpg'
+import ProjectSix from '../public/assets 2/Fotolia_69419317_Subscription_Monthly_L.jpg'
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState("ALL");
@@ -43,37 +48,37 @@ const Gallery = () => {
   const portfolioItems = [
     {
       id: "1",
-      src: "../public/assets 2/Fotolia_46046458_Subscription_Monthly_M.jpg",
+      src: ProjectOne,
       title: "Project 1",
       link: "http://charcounter.thapaonlineclass.com/",
     },
     {
       id: "3",
-      src: "../public/assets 2/Fotolia_49123103_Subscription_Monthly_XL.jpg",
+      src: ProjectTwo,
       title: "Project 2",
       link: "https://www.thapatechnical.com/",
     },
     {
       id: "1",
-      src: "../public/assets 2/Fotolia_50072102_Subscription_Monthly_M.jpg",
+      src: ProjectThree,
       title: "Project 3",
       link: "#",
     },
     {
       id: "1 2",
-      src: "../public/assets 2/Fotolia_54040023_Subscription_Monthly_M-1.jpg",
+      src: ProjectFour,
       title: "Project 4",
       link: "#",
     },
     {
       id: "2",
-      src: "../public/assets 2/Fotolia_55534392_Subscription_Monthly_M.jpg",
+      src: ProjectFive,
       title: "Project 5",
       link: "#",
     },
     {
       id: "1",
-      src: "../public/assets 2/Fotolia_69419317_Subscription_Monthly_L.jpg",
+      src: ProjectSix,
       title: "Project 6",
       link: "#",
     },
