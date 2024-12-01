@@ -1,0 +1,52 @@
+/* Customizing the Slick dots */
+.custom-slick-slider .slick-dots {
+    bottom: 20px; /* Adjust this value to move the dots up or down */
+    text-align: left; /* Center the dots */
+  }
+  
+  /* Example: Moving the dots to the top */
+  .custom-slick-slider .slick-dots {
+    top: 330px; /* Position the dots at the top of the slider */
+    right: 282px; /* Remove the default bottom positioning */
+  }
+  /* Default dot styles: Black color */
+.custom-slick-slider .slick-dots li button:before {
+    font-size: 10px; /* Base size of the dots */
+    color: black; /* Default dot color */
+    opacity: 1; /* Ensure the dot is fully visible */
+    display: inline-block; /* Keep the dots inline */
+    width: 8px; /* Base width */
+    height: 8px; /* Base height */
+    border-radius: 50%; /* Make the dots circular */
+    background-color: #7f8f9f; /* Fill the dot with black color */
+    content: ""; /* Ensure the dot is displayed */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    position: relative; /* Use relative positioning */
+  }
+  
+  /* Active dot styles: Increased size with orange border */
+  .custom-slick-slider .slick-dots li.slick-active button:before {
+    width: 14px; /* Slightly increased width */
+    height: 14px; /* Slightly increased height */
+    border: 2px solid #ff694e; /* Orange border around the dot */
+    background-color: transparent; /* Transparent background */
+    border-radius: 50%; /* Keep it circular */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    position: relative; /* Use relative positioning */
+    top: 91%; /* Move the dot 50% down */
+    transform: translateY(-46%); /* Center it vertically */
+  }
+  .custom-slick-slider .slick-slide {
+    margin: 0; /* Remove any margin between slides */
+    padding: 0;
+    width: 280px; /* Remove any padding if necessary */
+  }
+  
+  /* Ensure slides are aligned without gaps */
+  .custom-slick-slider .slick-list {
+    margin: 0; /* Remove any margin from the list */
+    padding: 0; 
+    width: 840px;    /* Remove any padding from the list */
+  }
+
+  

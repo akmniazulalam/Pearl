@@ -1,0 +1,69 @@
+.header h1::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    display: block;
+    top:-12px;
+    left:48% ;
+    width: 80px;
+    height: 5px;
+    background-color: #FF003D;
+    margin-bottom:21px;
+  }
+  .header h1{
+    font-family: 'Oxygen', sans-serif;
+  }
+  .tab-btn button:hover{
+    background-color: #00CA52;
+    color:white;
+  }
+  .tab-btn button.active{
+    background-color: #00CA52;
+    color:white;
+  }
+  .tab-info{
+    animation: fadeIn 0.5s linear forwards ;
+  }
+  .recent-head h1::before{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #FF003D;
+    margin-bottom:21px;
+  }
+  .recent-head h1{
+    
+      font-family: 'Oxygen';
+      color: #002040;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1.8px;
+  }
+  .recent-head p{
+   
+      font-size: 20px;
+      color: #a6a6a6;
+      line-height: 26px;
+      text-align: center;
+  }
+  .post-title{
+    
+      display: block;
+      padding-right: 10%;
+      padding-bottom: 20px;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #23282d;
+      overflow: hidden;
+      font-family: "rubik";
+      font-weight: 800;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }

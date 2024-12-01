@@ -1,0 +1,185 @@
+.mission img {
+  width: 80%;
+}
+
+.list {
+  display: flex;
+  gap: 4rem;
+  padding-top: 3rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: #999;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+.doneIcon {
+  font-size: 1.5rem;
+  padding-right: 5px;
+  color: rgb(0, 172, 9);
+}
+
+.sliderBox {
+  padding-top: 2rem;
+  padding-inline: 5rem;
+}
+.sliderBox img {
+  width: 100% !important;
+  filter: grayscale(100%);
+}
+.sliderBox img:hover {
+  filter: none;
+}
+.faqBox {
+  padding-top: 2rem;
+}
+
+.faq-item {
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+summary {
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fa;
+  color: #0c314d;
+}
+
+summary:hover {
+  background-color: #e8ebf1;
+}
+
+.arrow {
+  font-size: 1.2em;
+  color: #0c314d;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(-180deg);
+}
+.btnBox {
+  padding-top: 2rem;
+}
+.btnBox p {
+  display: inline;
+  font-family: "Rubik", "sans-serif";
+  color: #999;
+  font-size: 14px;
+}
+.faqButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.faqButton span {
+  font-family: "Oxygen", "sans-serif";
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 13px 18px;
+  padding-right: 5px;
+  background-color: #56c547;
+}
+
+.buttonGreenIcon {
+  background-color: #56c547;
+  color: #fff;
+  padding: 12px 10.5px;
+  font-size: 1.6rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.faqButton span:hover {
+  background-color: #002040;
+}
+
+.contactNow {
+  margin-inline: auto;
+  background-color: #58c747;
+  display: flex;
+  align-items: center;
+  padding-block: 2rem;
+  padding-inline: 5rem;
+}
+.contactNow h3 {
+  font-size: 2rem;
+  color: #e8ebf1;
+  font-family: "Oxygen", "sans-serif";
+  font-weight: 700;
+  padding-left: 74px;
+}
+
+.contactNowButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px 18px;
+  background-color: #fff;
+  color: #000000;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 115px;
+  white-space: nowrap;
+}
+
+.contactNowButton span {
+  padding: 0;
+  white-space: nowrap;
+}
+
+.contactNowIcon {
+  color: rgb(0, 185, 46);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.contactNowButton:hover {
+  background-color: #002040;
+  color: aliceblue;
+}
+
+@media (max-width: 786px) {
+  .mission img {
+    width: 100%;
+  }
+  .list {
+    display: block;
+    padding-top: 3rem;
+  }
+  .sliderBox {
+    padding-top: 2rem;
+    padding-inline: 2rem;
+  }
+  .contactNow {
+    display: block;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+  }
+  .contactNow h3 {
+    padding-bottom: 1.5rem;
+  }
+}

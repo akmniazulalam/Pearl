@@ -1,0 +1,26 @@
+#map1 {
+    position: relative;
+}
+
+.gmapOne {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 32, 64, 0.904);
+}
+#map2 {
+    position: relative;
+}
+
+.gmapTwo {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    z-index: 99999;
+    background-color: rgba(0, 32, 64, 0.904);
+}
+/* .slideForMap {
+    position: relative;
+    width: 100%;
+} */

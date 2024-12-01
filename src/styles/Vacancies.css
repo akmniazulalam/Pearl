@@ -1,0 +1,106 @@
+.positionBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 4rem;
+  padding-block: 3.3rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.317);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.317);
+}
+.positionBox:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-left: 5px solid #04cb43;
+  transition: all 0.1s linear;
+}
+.positionBox p {
+  color: #002040 !important;
+}
+.positionBox div {
+  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.faqBox {
+  padding-top: 2rem;
+}
+
+.faq-item {
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+summary {
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fa;
+  color: #0c314d;
+}
+
+summary:hover {
+  background-color: #e8ebf1;
+}
+
+.arrow {
+  font-size: 1.2em;
+  color: #0c314d;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(-180deg);
+}
+.btnBox {
+  padding-top: 2rem;
+}
+.btnBox p {
+  display: inline;
+}
+.faqButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.faqButton span {
+  font-family: "Oxygen", "sans-serif";
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 13px 18px;
+  padding-right: 5px;
+  background-color: #56c547;
+}
+
+.askButtonIcon {
+  background-color: #56c547;
+  color: #fff;
+  padding: 12px 10.5px;
+  font-size: 26px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.faqButton span:hover {
+  background-color: #002040;
+}
+@media (max-width: 900px) {
+  .positionBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.317);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.317);
+  }
+}
