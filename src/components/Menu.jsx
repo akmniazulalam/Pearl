@@ -20,47 +20,47 @@ const Menu = ({className}) => {
           onMouseEnter={() => setShowSubmenu(true)}
           onMouseLeave={() => setShowSubmenu(false)}
         >
-          <a
-            href="#"
+          <Link
+            to={"#"}
             className="text-[17px] pr-9 font-bold font-oxygen hover:text-white text-menuColor"
           >
             Pages
-          </a>
+          </Link>
 
           {/* Submenu */}
           {showSubmenu && (
             <ul className="absolute top-full left-0 bg-dropdownColor shadow-md rounded-lg p-2 mt-[0px]">
               <li>
-                <a
-                  href="/About Us"
+                <Link
+                  to={"/About Us"}
                   className="block px-4 py-2 font-bold font-oxygen text-[15px] hover:text-white text-menuColor hover:bg-btnColor rounded"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Gallery"
+                <Link
+                  to={"/Gallery"}
                   className="block px-4 py-2 font-bold font-oxygen text-[15px] hover:text-white text-menuColor hover:bg-btnColor rounded"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Our Team"
+                <Link
+                  to={"/Our Team"}
                   className="block px-4 py-2 font-bold font-oxygen text-[15px] hover:text-white text-menuColor hover:bg-btnColor rounded"
                 >
                   Our Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/Vacancies"
+                <Link
+                  to={"/Vacancies"}
                   className="block px-4 py-2 font-bold font-oxygen text-[15px] hover:text-white text-menuColor hover:bg-btnColor rounded"
                 >
                   Vacancies
-                </a>
+                </Link>
               </li>
             </ul>
           )}
