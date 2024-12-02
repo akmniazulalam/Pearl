@@ -11,6 +11,7 @@ import Container from './Container'
 import Flex from './Flex'
 import Heading from './Heading'
 import { MdLocationPin } from "react-icons/md";
+import IconLocation from './location1.png'
 import Paragraph from './Paragraph'
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -39,6 +40,16 @@ const MapComponent = () => {
         L.control.fullscreen({
             position: 'topright',
         }).addTo(map1);
+
+        delete L.Icon.Default.prototype._getIconUrl;
+
+        L.Icon.Default.mergeOptions({
+            iconUrl: IconLocation, // Remove default icon URL
+            iconRetinaUrl: '', // Remove retina icon
+            shadowUrl: '', // Remove shadow
+            iconSize: [60, 60],
+        });
+        
 
         // Base Layers for Street View and Satellite
         const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -136,6 +147,15 @@ const MapComponent = () => {
         L.control.fullscreen({
             position: 'topright',
         }).addTo(map2);
+
+        delete L.Icon.Default.prototype._getIconUrl;
+
+        L.Icon.Default.mergeOptions({
+            iconUrl: IconLocation, // Remove default icon URL
+            iconRetinaUrl: '', // Remove retina icon
+            shadowUrl: '', // Remove shadow
+            iconSize: [60, 60],
+        });
 
         // Base Layers for Street View and Satellite
         const streetLayer2 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -247,6 +267,7 @@ const MapComponent = () => {
     };
 
     return (
+        
         <Slider {...settings}>
             <div>
                 <div id="map1" style={{ height: '750px', width: '100%' }}>
