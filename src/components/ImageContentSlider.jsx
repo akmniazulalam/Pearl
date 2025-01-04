@@ -232,8 +232,8 @@ const ImageContentSlider = ({ className }) => {
           margin-top: 0px;
           position: absolute;
           bottom: -58px;
-          left: 156px;
-        //   transform: translateX(-50%);
+          left: 50%;
+          transform: translateX(-50%);
         }
         .custom-dot {
           display: flex;
