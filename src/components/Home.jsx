@@ -111,56 +111,58 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="service bg-serviceBgColor pt-[150px] pl-[155px]">
-                <div className="border-t-[6px] max-w-[50px] border-borderColor">
-                    <Heading h2Text="What makes us special" h2Class={'text-dropdownColor font-oxygen w-[500px] mt-3 font-bold text-[42px]'} />
-                </div>
-                <Paragraph ptext={'Over 42,000 dedicated employees, working in 17 regional clusters around the globe, deliver operational excellence.'} className={'w-[690px] mt-[25px] mb-[50px] font-rubik text-[16px] leading-30 text-servicePColor'} />
-                <Flex>
+            <div className="service bg-serviceBgColor pt-[150px]">
+                <Container>
+                    <div className="border-t-[6px] max-w-[50px] border-borderColor">
+                        <Heading h2Text="What makes us special" h2Class={'text-dropdownColor font-oxygen w-[500px] mt-3 font-bold text-[42px]'} />
+                    </div>
+                    <Paragraph ptext={'Over 42,000 dedicated employees, working in 17 regional clusters around the globe, deliver operational excellence.'} className={'w-[690px] mt-[25px] mb-[50px] font-rubik text-[16px] leading-30 text-servicePColor'} />
                     <Flex>
-                        <div className="packageAndtransport">
-                            <Flex>
-                                <Image src={Package} alt={Package} className={'h-[42px] mr-5 w-[35px]'} />
-                                <div className="packageTexts">
-                                    <div className="border-t-[6px] max-w-[50px] border-servicePColor">
-                                        <Heading h3Text={'Packaging and Storage'} h3Class={'font-oxygen pt-4 font-bold w-[204px] text-[18px] text-dropdownColor'} />
+                        <Flex>
+                            <div className="packageAndtransport">
+                                <Flex>
+                                    <Image src={Package} alt={Package} className={'h-[42px] mr-5 w-[35px]'} />
+                                    <div className="packageTexts">
+                                        <div className="border-t-[6px] max-w-[50px] border-servicePColor">
+                                            <Heading h3Text={'Packaging and Storage'} h3Class={'font-oxygen pt-4 font-bold w-[204px] text-[18px] text-dropdownColor'} />
+                                        </div>
+                                        <Paragraph ptext={'Receive premium pricing from Top Tier financial institutions. Premium pricing from Top Tier financial institutions.'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[250px] text-servicePColor'} />
                                     </div>
-                                    <Paragraph ptext={'Receive premium pricing from Top Tier financial institutions. Premium pricing from Top Tier financial institutions.'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[250px] text-servicePColor'} />
-                                </div>
-                            </Flex>
-                            <Flex className={'mt-9'}>
-                                <Image src={TruckTwo} alt={TruckTwo} className={'h-[26px] mr-5 w-[35px]'} />
-                                <div className="packageTexts">
-                                    <div className="border-t-[6px] max-w-[50px] border-servicePColor">
-                                        <Heading h3Text={'Ground Transport'} h3Class={'font-oxygen pt-4 font-bold w-[204px] text-[18px] text-dropdownColor'} />
+                                </Flex>
+                                <Flex className={'mt-9'}>
+                                    <Image src={TruckTwo} alt={TruckTwo} className={'h-[26px] mr-5 w-[35px]'} />
+                                    <div className="packageTexts">
+                                        <div className="border-t-[6px] max-w-[50px] border-servicePColor">
+                                            <Heading h3Text={'Ground Transport'} h3Class={'font-oxygen pt-4 font-bold w-[204px] text-[18px] text-dropdownColor'} />
+                                        </div>
+                                        <Paragraph ptext={'Land transport or land transportation, also referred to as ground transport or ground transportation'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[280px] text-servicePColor'} />
                                     </div>
-                                    <Paragraph ptext={'Land transport or land transportation, also referred to as ground transport or ground transportation'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[280px] text-servicePColor'} />
-                                </div>
-                            </Flex>
-                        </div>
-                        <div className="services ml-[70px]">
-                            <Flex>
-                                <Image src={ForkliftTwo} alt={ForkliftTwo} className={'h-[42px] mr-5 w-[40px]'} />
-                                <div className="servicesTexts">
-                                    <div className="border-t-[6px] max-w-[50px] border-servicePColor">
-                                        <Heading h3Text={'Warehousing Service'} h3Class={'font-oxygen pt-4 w-[204px] font-bold text-[18px] text-dropdownColor'} />
+                                </Flex>
+                            </div>
+                            <div className="services ml-[70px]">
+                                <Flex>
+                                    <Image src={ForkliftTwo} alt={ForkliftTwo} className={'h-[42px] mr-5 w-[40px]'} />
+                                    <div className="servicesTexts">
+                                        <div className="border-t-[6px] max-w-[50px] border-servicePColor">
+                                            <Heading h3Text={'Warehousing Service'} h3Class={'font-oxygen pt-4 w-[204px] font-bold text-[18px] text-dropdownColor'} />
+                                        </div>
+                                        <Paragraph ptext={'Our team’s EPCM experience includes both domestic and international projects, where our highly skilled construction project.'} className={'font-rubik mt-[9px] text-[14px] leading-24 w-[365px] pr-[84px] text-servicePColor'} />
                                     </div>
-                                    <Paragraph ptext={'Our team’s EPCM experience includes both domestic and international projects, where our highly skilled construction project.'} className={'font-rubik mt-[9px] text-[14px] leading-24 w-[365px] pr-[84px] text-servicePColor'} />
-                                </div>
-                            </Flex>
-                            <Flex className={'mt-9'}>
-                                <Image src={Ship} alt={Ship} className={'h-[26px] mr-5 w-[35px]'} />
-                                <div className="packageTexts">
-                                    <div className="border-t-[6px] max-w-[50px] border-servicePColor">
-                                        <Heading h3Text={'Logistic Services'} h3Class={'font-oxygen pt-4 w-[204px] font-bold text-[18px] text-dropdownColor'} />
+                                </Flex>
+                                <Flex className={'mt-9'}>
+                                    <Image src={Ship} alt={Ship} className={'h-[26px] mr-5 w-[35px]'} />
+                                    <div className="packageTexts">
+                                        <div className="border-t-[6px] max-w-[50px] border-servicePColor">
+                                            <Heading h3Text={'Logistic Services'} h3Class={'font-oxygen pt-4 w-[204px] font-bold text-[18px] text-dropdownColor'} />
+                                        </div>
+                                        <Paragraph ptext={'Water transportation is the intentional movement by water over large distances. Methods of transportation fall into three categories:'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[300px] text-servicePColor'} />
                                     </div>
-                                    <Paragraph ptext={'Water transportation is the intentional movement by water over large distances. Methods of transportation fall into three categories:'} className={'font-rubik mt-[10px] text-[14px] leading-24 w-[300px] text-servicePColor'} />
-                                </div>
-                            </Flex>
-                        </div>
-                        <Image src={Two} alt={Two} className={'h-[410px] w-[426px]'} />
+                                </Flex>
+                            </div>
+                            <Image src={Two} alt={Two} className={'h-[410px] w-[426px]'} />
+                        </Flex>
                     </Flex>
-                </Flex>
+                </Container>
             </div>
 
             <div className="specialService mt-[110px] mb-[120px]">
